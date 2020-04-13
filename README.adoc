@@ -1,11 +1,19 @@
-= Password Validator MS
-: toc:
-: toc-title: Summary
+# Password Validator MS
 
-== Configuration for DEV environment
-Set the following parameter to enable profile _dev_:
+## Quick Starter
 
-* `-Dspring.profiles.active = dev`
+This poc aims to test some technologies of the java world, among them:
 
-== Swagger
-http: // localhost: 8010 / swagger-ui.html
+* Spring Boot
+* Spring Data
+* Spring Fox
+* Lombok
+* JUnit
+* Logback
+* Others
+
+### How to use
+
+* Access the swagger (http://localhost:8010/swagger-ui.html) and check the following endpoints:
+** sampleValidation
+** validation
