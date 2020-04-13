@@ -1,0 +1,4 @@
+logging:
+  level:
+    com.laboratory.ms.base.web.RequestLoggingFilter: DEBUG
+    com.laboratory.ms.base.web.ResponseLoggingFilter: DEBUG

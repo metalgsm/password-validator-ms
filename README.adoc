@@ -1,0 +1,11 @@
+= Password Validator MS
+: toc:
+: toc-title: Summary
+
+== Configuration for DEV environment
+Set the following parameter to enable profile _dev_:
+
+* `-Dspring.profiles.active = dev`
+
+== Swagger
+http: // localhost: 9010 / swagger-ui.html
