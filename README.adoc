@@ -17,3 +17,10 @@ This poc aims to test some technologies of the java world, among them:
 * Access the swagger (http://localhost:8010/swagger-ui.html) and check the following endpoints:
 ** sampleValidation
 ** validation
+
+#### sampleValidation
+
+* This endpoint validates the password according to the rules already mentioned, returns a boolean return, true for valid password, false for invalid password.
+#### Headers
+* IP [Optional]
+** Origin IP
