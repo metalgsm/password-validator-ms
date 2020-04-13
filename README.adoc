@@ -1,5 +1,14 @@
 # Password Validator MS
 
+This poc has the objective of validating a password, there are two validations, one simple and one composite, the simple one returns true and false for valid and not valid, while the composite focuses on returning HTTP codes with relevant and friendly messages.
+
+rules for the password to be valid:
+* Nine or more characters
+* At least 1 digit
+* At least 1 lowercase letter
+* At least 1 capital letter
+* At least 1 special character
+
 ## Quick Starter
 
 This poc aims to test some technologies of the java world, among them:
@@ -21,6 +30,22 @@ This poc aims to test some technologies of the java world, among them:
 #### sampleValidation
 
 * This endpoint validates the password according to the rules already mentioned, returns a boolean return, true for valid password, false for invalid password.
-#### Headers
+
+##### Headers
 * IP [Optional]
 ** Origin IP
+
+#### validation
+
+* This endpoint validates the password according to the aforementioned rules, returns 200 without a body for a valid password, and 406 for an invalid password, in addition, returns in the body the following json
+
+** { "message": "The following rules have not been met: Nine characters or more, At least 1 uppercase letter, At least 1 lowercase letter, At least 1 special character",
+  "detail": ""}
+*** message: returns the rule (s) that have not been met.
+*** detail: exception details
+
+##### Headers
+* IP [Optional]
+** Origin IP
+* lang
+** Return language for messages, available Portuguese - Brazil [ptBR], English - United States [enUS].
