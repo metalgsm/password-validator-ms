@@ -3,6 +3,7 @@
 This poc has the objective of validating a password, there are two validations, one simple and one composite, the simple one returns true and false for valid and not valid, while the composite focuses on returning HTTP codes with relevant and friendly messages.
 
 rules for the password to be valid:
+
 * Nine or more characters
 * At least 1 digit
 * At least 1 lowercase letter
